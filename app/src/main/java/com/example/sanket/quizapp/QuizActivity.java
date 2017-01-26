@@ -9,6 +9,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import static android.R.attr.name;
 
@@ -40,6 +41,9 @@ public class QuizActivity extends AppCompatActivity {
     CheckBox questionTenPart1;
     CheckBox questionTenPart2;
     CheckBox questionTenPart3;
+    CheckBox questionTenPart4;
+    CheckBox questionTenPart5;
+    CheckBox questionTenPart6;
 
     String userName;
 
@@ -74,9 +78,12 @@ public class QuizActivity extends AppCompatActivity {
         questionNinePart1 = (EditText) findViewById(R.id.question_nine_answer_one);
         questionNinePart2 = (EditText) findViewById(R.id.question_nine_answer_two);
 
-        questionTenPart1 = (CheckBox) findViewById(R.id.checkbox_two);
-        questionTenPart2 = (CheckBox) findViewById(R.id.checkbox_four);
-        questionTenPart3 = (CheckBox) findViewById(R.id.checkbox_six);
+        questionTenPart2 = (CheckBox) findViewById(R.id.checkbox_two);
+        questionTenPart4 = (CheckBox) findViewById(R.id.checkbox_four);
+        questionTenPart6 = (CheckBox) findViewById(R.id.checkbox_six);
+        questionTenPart1 = (CheckBox) findViewById(R.id.checkbox_one);
+        questionTenPart3 = (CheckBox) findViewById(R.id.checkbox_three);
+        questionTenPart5 = (CheckBox) findViewById(R.id.checkbox_five);
     }
 
     @Override
@@ -187,9 +194,9 @@ public class QuizActivity extends AppCompatActivity {
 
 
 
-        if (questionNinePart1.getText().toString().equals("Front-End") || questionNinePart1.getText().toString().equals("Front-end")
+        if (questionNinePart1.getText().toString().equalsIgnoreCase("Front-End")
                 &&
-                questionNinePart2.getText().toString().equals("Back-End") || questionNinePart2.getText().toString().equals("Back-end"))
+                questionNinePart2.getText().toString().equalsIgnoreCase("Back-End"))
 
         {
             correct = correct + 1;
@@ -199,9 +206,12 @@ public class QuizActivity extends AppCompatActivity {
             incorrect = incorrect + 1;
         }
 
-        if(questionTenPart1.isChecked()
-                && questionTenPart2.isChecked()
-                && questionTenPart3.isChecked())
+        if(questionTenPart2.isChecked()
+                && questionTenPart4.isChecked()
+                && questionTenPart6.isChecked()
+                && !questionTenPart1.isChecked()
+                && !questionTenPart3.isChecked()
+                && !questionTenPart5.isChecked())
         {
             correct = correct + 1;
         }
@@ -209,6 +219,8 @@ public class QuizActivity extends AppCompatActivity {
         {
             incorrect = incorrect + 1;
         }
+
+        Toast.makeText(this,"You have answered "+correct+" correct Answers & "+incorrect+" incorrect Answers",Toast.LENGTH_SHORT).show();
 
         Intent intent2 = new Intent(QuizActivity.this, DisplayResult.class);
         intent2.putExtra("username" , userName);
