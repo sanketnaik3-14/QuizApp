@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="edit_text_name">Please enter your name</string>
+    <string name="app_welcome">Welcome to Android Quiz</string>
+    <string name="button_text">Press to Begin</string>
+    <string name="submit">Submit</string>
+    <string name="tryagain">Try Again</string>
+    <string name="exit">Exit</string>
+
+    <string name="quiz_question_one">What is an Activity in Android?</string>
+
+    <string name="q1a1">Activity performs the actions on the screen</string>
+    <string name="q1a2">Manage the Application content</string>
+    <string name="q1a3">Screen UI</string>
+    <string name="q1a4">None of the Above</string>
+
+    <string name="quiz_question_two">How to move services to foreground in android?</string>
+
+    <string name="q2a1">Services always work in foreground only</string>
+    <string name="q2a2">No, We can\'t do this query</string>
+    <string name="q2a3">Using startService(Intent intent)</string>
+    <string name="q2a4">startForeground(int id,Notification notification)</string>
+
+    <string name="quiz_question_three">What are the functionalites in asyncTask in android?</string>
+
+    <string name="q3a1">onPreExecution()</string>
+    <string name="q3a2">doInBackground()</string>
+    <string name="q3a3">onProgressUpdate()</string>
+    <string name="q3a4">onPostExecution()</string>
+
+
+    <string name="quiz_question_four">What is difference between content values and cursor in android SQlite?</string>
+
+    <string name="q4a1">content values are keypair values,which are inserted or updates in database</string>
+    <string name="q4a2">cursor is used to store temporary result</string>
+    <string name="q4a3">1 and 2</string>
+    <string name="q4a4">cursor is used to store data permanently</string>
+    <string name="q4a5">content values are used to share the data</string>
+
+    <string name="quiz_question_five">Persist data in android can be stored through</string>
+
+    <string name="q5a1">SharedPreferences</string>
+    <string name="q5a2">Internal/External storage</string>
+    <string name="q5a3">SQlite</string>
+    <string name="q5a4">Network Servers</string>
+    <string name="q5a5">All of the above</string>
+
+    <string name="quiz_question_six">What is APK in Android?</string>
+
+    <string name="q6a1">Android Packages</string>
+    <string name="q6a2">Android Pack</string>
+    <string name="q6a3">Android Packaging kit</string>
+    <string name="q6a4">None of the above</string>
+
+    <string name="quiz_question_seven">Data can be read from locan source XML through</string>
+
+    <string name="q7a1">XML Resource parser</string>
+    <string name="q7a2">XML pull parser</string>
+    <string name="q7a3">DOM parsing</string>
+    <string name="q7a4">None of the above</string>
+
+    <string name="quiz_question_eight">What is sandbox in android?</string>
+
+    <string name="q8a1">Each application runs securely in android without disturbing other applications</string>
+    <string name="q8a2">Android box</string>
+    <string name="q8a3">Android Development tool kit</string>
+    <string name="q8a4">None of the above</string>
+
+    <string name="quiz_question_nine">The __________ of an app is the part of the app system that the user
+        sees and interacts with, whereas the __________ is the part behind the scenes,
+        often accessed over the network.\n\n Fill in the correct options from the given options ?
+    </string>
+
+    <string name="quiz_question_ans1hint">Blank 1</string>
+    <string name="quiz_question_ans2hint">Blank 2</string>
+
+    <string name="quiz_question_ans1option1">&#8226; &#160; &#160;  SQlite</string>
+    <string name="quiz_question_ans1option2">&#8226; &#160; &#160;  Front-End</string>
+    <string name="quiz_question_ans1option3">&#8226; &#160; &#160;  Preferences</string>
+
+    <string name="quiz_question_ans2option1">&#8226; &#160; &#160;  asyncTask</string>
+    <string name="quiz_question_ans2option2">&#8226; &#160; &#160;  Packages</string>
+    <string name="quiz_question_ans2option3">&#8226; &#160; &#160;  Back-End</string>
+
+    <string name="quiz_question_ten">Which of the following are versions of Android ? Check correct options. </string>
+
+    <string name="android_version_1">PeanutJelly</string>
+    <string name="android_version_2">Donut</string>
+    <string name="android_version_3">SodaPop</string>
+    <string name="android_version_4">Froyo</string>
+    <string name="android_version_5">MnM</string>
+    <string name="android_version_6">Nougat</string>
+
+
+</resources>
